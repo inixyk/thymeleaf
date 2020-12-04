@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Form Aktivitas</h1>
+	<form method="post" action="/form">
+		<table>
+			<tr>
+				<td>No</td>
+				<td><input type="text" name="no" th:value="${no}"/></td>
+			</tr>
+			<tr>
+				<td>Nama Kegiatan</td>
+				<td><input type="text" name="nama" th:value="${nama}"/></td>
+			</tr>
+			<tr>
+				<td>Tanggal</td>
+				<td><input type="date" name="tgl" th:value="${tgl}"/></td>
+			</tr>
+			<tr>
+				<td>Keterangan</td>
+				<td><textarea name="keterangan">[[${keterangan}]]</textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" name="aksi" value="SIMPAN"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
